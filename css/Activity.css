@@ -1,0 +1,96 @@
+.Cards_Container_Activity {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.Activity {
+    flex-basis: 100%;
+    min-height: 100%;
+}
+
+.Activity_Cards_list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.Duo_Cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Activity_Card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    min-width: 270px;
+    height: 515px;
+}
+
+.IMG_Big {
+    height: 90%;
+}
+
+.IMG_Small {
+    height: 75%;
+}
+
+.IMG_Medium {
+    height: 83%;
+}
+
+.Activity_Card_Small {
+    height: 30%;
+    flex-basis: 15%;
+}
+
+.Activity_Card_Image {
+    position: relative;
+    max-width: 100%;
+}
+
+.Activity_Card_Image img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.Activity_Card h3 {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.Card_big {
+    max-width: 25%;
+}
+
+@media(max-width:992px) {
+    .Card_big {
+        max-width: 100%;
+    }
+    .Activity_Cards_list {
+        flex-direction: column;
+    }
+    .Activity_Card_Image {
+        border-radius: 1rem 1rem 0 0;
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Activity {
+        padding: 0 15px;
+    }
+    .Duo_Cards {
+        flex-direction: column;
+    }
+}

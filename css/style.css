@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url(header_nav.css);
+@import url(Filter_Search.css);
+@import url(Hosting_Popular.css);
+@import url(Activity.css);
+
+/* Importing the css file Footer.css into the main css file. */
+
+@import url(Footer.css);
+@import url(loader.css);
+:root {
+    --blue: #0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+    --font: "raleway";
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "raleway", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1260px;
+    margin: auto;
+}
+
+main {
+    margin: 0 80px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Color_Star_primary {
+    color: var(--blue);
+    font-size: 13px;
+}
+
+.Color_Star_secondary {
+    color: #bababa;
+    font-size: 13px;
+}
+
+@media(max-width:992px) {
+    main {
+        margin: 0;
+    }
+}

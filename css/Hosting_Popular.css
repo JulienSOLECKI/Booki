@@ -1,0 +1,129 @@
+.Cards_Container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.Cards_Container>div {
+    background-color: var(--grey);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.Cards_Container .Hosting {
+    flex-basis: 75%;
+}
+
+.Cards_Container .Popular {
+    flex-basis: 25%;
+}
+
+.Cards_Container .Hosting a {
+    font-weight: bold;
+}
+
+.Cards_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.Card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    min-width: 180px;
+}
+
+.Card_Image img {
+    border-radius: 15px 15px 0 0;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Cards_list a p {
+    font-weight: 300;
+}
+
+.Cards_list a p,
+.Cards_list a h3,
+.popular_desc h3 {
+    margin: 3px;
+    font-size: 15px;
+}
+
+
+/* POPULAIR */
+
+.Popular {
+    display: flex;
+    flex-direction: column;
+}
+
+.Popular_Card.Card img {
+    height: auto;
+    border-radius: 15px 0 0 15px;
+    width: 40%;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+.Popular_Card {
+    display: flex;
+    min-width: 28px;
+    max-height: 160px;
+}
+
+.popular_desc {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Popular h3 {
+    display: flex;
+    font-size: 13px;
+}
+
+.Popular h3,
+.Hosting h3 {
+    margin-top: 5px;
+}
+
+.Cards_Container .popular_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}
+
+@media(max-width:992px) {
+    .Popular_Card {
+        min-width: 0;
+    }
+    .Cards_Container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .Popular {
+        order: -1;
+    }
+    .Cards_Container .popular_flex {
+        flex-direction: row;
+    }
+}
+
+@media(max-width:768px) {
+    .Cards_Container .popular_flex {
+        flex-direction: column;
+    }
+}

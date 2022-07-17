@@ -1,0 +1,30 @@
+footer {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .bloc a {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+footer .bloc {
+    margin-left: 15px;
+    padding: 0 75px;
+    justify-content: space-evenly;
+}
+
+@media(max-width:768px) {
+    footer {
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+    footer .bloc {
+        margin-left: 0;
+        padding: 0 15px;
+        justify-content: space-evenly;
+    }
+}

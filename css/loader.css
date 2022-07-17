@@ -1,0 +1,49 @@
+.loader{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    inset: 0;
+    z-index: 1;
+    animation: loader 0.1s 5s forwards;
+}
+
+.loader i{
+    padding: 20px 0;
+    color: var(--blue);
+}
+
+.ContainerLoader{
+    width: 30%;
+    border-radius: 15px;
+    border: 1px solid var(--grey);
+
+}
+
+.loading{
+    height: 15px;
+    background-color: var(--blue);
+    border-radius: 15px;
+    animation: Loading 5s linear;
+}
+
+@keyframes Loading {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes loader {
+    
+    to{
+        transform: scale(0);
+    }
+}
